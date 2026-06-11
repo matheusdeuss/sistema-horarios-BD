@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<div class="card">
+  <h2>Carga docente — 2026/1 (visão vw_carga_professores)</h2>
+  <table>
+    <tr><th>Professor</th><th>Titulação</th><th>Disciplinas</th>
+        <th>Carga horária total</th><th>Alunos matriculados</th></tr>
+    {% for c in carga %}
+    <tr>
+      <td>{{ c.professor }}</td><td>{{ c.titulacao }}</td>
+      <td>{{ c.qtde_disciplinas }}</td><td>{{ c.carga_horaria_total }} h</td>
+      <td>{{ c.total_alunos }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<div class="card">
+  <h2>Nova habilitação (professor apto a ministrar disciplina)</h2>
+  <form method="post" style="display:flex;gap:12px;align-items:end;flex-wrap:wrap;">
+    <div class="campo"><label>Professor</label>
+      <select name="id_professor" required>
+        {% for p in professores %}<option value="{{ p.id_professor }}">{{ p.nome }}</option>{% endfor %}
+      </select>
+    </div>
+    <div class="campo"><label>Disciplina</label>
+      <select name="id_disciplina" required>
+        {% for d in disciplinas %}
+        <option value="{{ d.id_disciplina }}">P{{ d.periodo }} — {{ d.codigo }} — {{ d.nome }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="campo"><button type="submit">Adicionar</button></div>
+  </form>
+</div>
+<div class="card">
+  <h2>Habilitações cadastradas ({{ habilitacoes|length }})</h2>
+  <table>
+    <tr><th>Professor</th><th>Código</th><th>Disciplina</th><th></th></tr>
+    {% for h in habilitacoes %}
+    <tr>
+      <td>{{ h.professor }}</td><td>{{ h.codigo }}</td><td>{{ h.disciplina }}</td>
+      <td>
+        <form class="inline" method="post" action="{{ url_for('remover_habilitacao') }}">
+          <input type="hidden" name="id_professor" value="{{ h.id_professor }}">
+          <input type="hidden" name="id_disciplina" value="{{ h.id_disciplina }}">
+          <button class="perigo" type="submit">Remover</button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

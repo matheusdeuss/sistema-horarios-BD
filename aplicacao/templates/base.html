@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Gestão de Horários - ADS/PUC Minas</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f4f6f9; color: #222; }
+  header { background: #1c3f94; color: #fff; padding: 14px 28px; display: flex;
+           justify-content: space-between; align-items: center; flex-wrap: wrap; }
+  header h1 { font-size: 1.15rem; margin: 0; }
+  nav a { color: #cdd9f4; margin-left: 18px; text-decoration: none; font-size: .95rem; }
+  nav a:hover { color: #fff; }
+  main { max-width: 1100px; margin: 26px auto; padding: 0 16px; }
+  .card { background: #fff; border-radius: 8px; padding: 22px; margin-bottom: 22px;
+          box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+  h2 { margin-top: 0; color: #1c3f94; font-size: 1.2rem; }
+  table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+  th, td { border: 1px solid #dde3ee; padding: 7px 10px; text-align: left; }
+  th { background: #eef2fb; }
+  tr:nth-child(even) td { background: #fafbfe; }
+  input, select, button { padding: 8px 10px; border: 1px solid #c5cee0; border-radius: 5px;
+          font-size: .95rem; }
+  button { background: #1c3f94; color: #fff; border: 0; cursor: pointer; }
+  button:hover { background: #2a55c0; }
+  button.perigo { background: #b3372f; }
+  form.inline { display: inline; }
+  .flash { padding: 10px 14px; border-radius: 6px; margin-bottom: 14px; }
+  .flash.ok { background: #e2f3e5; color: #1e6b2c; border: 1px solid #b5dfbe; }
+  .flash.erro { background: #fbe4e2; color: #8f231c; border: 1px solid #efc1bd; }
+  .grade-slot { background: #eef2fb; border-radius: 6px; padding: 8px; margin: 4px 0;
+                font-size: .85rem; }
+  .badge { display: inline-block; background: #1c3f94; color: #fff; border-radius: 10px;
+           padding: 1px 8px; font-size: .75rem; }
+  .campo { margin-bottom: 12px; }
+  .campo label { display: block; font-size: .85rem; margin-bottom: 4px; color: #444; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Sistema de Gestão de Horários — ADS / PUC Minas</h1>
+  {% if session.id_usuario %}
+  <nav>
+    <a href="{{ url_for('grade') }}">Grade</a>
+    <a href="{{ url_for('usuarios') }}">Usuários</a>
+    <a href="{{ url_for('habilitacoes') }}">Habilitações</a>
+    <a href="{{ url_for('relatorio') }}">Carga docente</a>
+    <a href="{{ url_for('logout') }}">Sair ({{ session.nome }})</a>
+  </nav>
+  {% endif %}
+</header>
+<main>
+  {% with msgs = get_flashed_messages(with_categories=true) %}
+    {% for cat, m in msgs %}<div class="flash {{ cat }}">{{ m }}</div>{% endfor %}
+  {% endwith %}
+  {% block conteudo %}{% endblock %}
+</main>
+</body>
+</html>

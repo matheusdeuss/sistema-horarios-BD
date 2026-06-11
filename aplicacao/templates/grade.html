@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<div class="card">
+  <h2>Grade de horários — 2026/1 ({{ total }} alocações)</h2>
+  {% if session.tipo == 'COORDENADOR' %}
+  <form method="post" action="{{ url_for('gerar') }}" style="margin-bottom:14px;">
+    <button type="submit">Gerar grade automaticamente (algoritmo)</button>
+  </form>
+  {% endif %}
+  <table>
+    <tr><th style="width:90px">Horário</th>
+      {% for d in dias %}<th>{{ d }}</th>{% endfor %}
+    </tr>
+    {% for slot, faixa in [(1, '19:00–20:40'), (2, '20:55–22:35')] %}
+    <tr>
+      <td><strong>{{ faixa }}</strong></td>
+      {% for d in dias %}
+      <td>
+        {% for a in matriz[d][slot] %}
+        <div class="grade-slot">
+          <span class="badge">P{{ a.periodo }}</span>
+          <strong>{{ a.cod_disciplina }}</strong> {{ a.disciplina }}<br>
+          {{ a.professor }} — Sala {{ a.sala }}
+        </div>
+        {% endfor %}
+      </td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

@@ -1,0 +1,230 @@
+
+==============================================================================
+J1) GRADE COMPLETA DE HORARIOS
+------------------------------------------------------------------------------
+dia | hora_inicio | periodo | codigo | disciplina | professor | sala
+SEG | 19:00 | 1 | IADS | Introducao a ADS | Daniel Ferreira | B3-101
+SEG | 19:00 | 2 | BD1 | Banco de Dados I | Camila Rocha | B3-102
+SEG | 19:00 | 3 | ENG1 | Engenharia de Software | Elaine Martins | B3-201
+SEG | 19:00 | 5 | NUV1 | Computacao em Nuvem | Fabio Goncalves | B5-L01
+SEG | 20:55 | 1 | ALG1 | Algoritmos e Estruturas de Dados I | Henrique Barbosa | B3-101
+SEG | 20:55 | 2 | ALG2 | Algoritmos e Estruturas de Dados II | Ana Beatriz Souza | B3-102
+SEG | 20:55 | 3 | BD2 | Banco de Dados II | Camila Rocha | B3-201
+SEG | 20:55 | 4 | MOB1 | Desenvolvimento Mobile | Daniel Ferreira | B5-L01
+SEG | 20:55 | 5 | TI1 | Trabalho Interdisciplinar | Elaine Martins | B5-L02
+TER | 19:00 | 1 | LOG1 | Logica Computacional | Ana Beatriz Souza | B3-101
+TER | 19:00 | 2 | POO1 | Programacao Orientada a Objetos | Gabriela Nunes | B3-102
+TER | 19:00 | 3 | WEB1 | Desenvolvimento Web | Daniel Ferreira | B3-201
+TER | 19:00 | 4 | GPR1 | Gerencia de Projetos | Elaine Martins | B5-L01
+TER | 19:00 | 5 | IA1 | Inteligencia Artificial | Camila Rocha | B5-L02
+TER | 20:55 | 1 | MTD1 | Matematica Discreta | Bruno Lima | B3-101
+TER | 20:55 | 3 | SO1 | Sistemas Operacionais | Henrique Barbosa | B3-102
+TER | 20:55 | 4 | RED1 | Redes de Computadores | Fabio Goncalves | B3-201
+TER | 20:55 | 5 | TOP1 | Topicos Especiais em Tecnologia | Gabriela Nunes | B5-L01
+QUA | 19:00 | 2 | ARC1 | Arquitetura de Computadores | Bruno Lima | B3-101
+QUA | 19:00 | 4 | SEG1 | Seguranca da Informacao | Fabio Goncalves | B3-102
+(20 linha(s))
+
+==============================================================================
+J2) DISCIPLINAS MATRICULADAS POR ALUNO
+------------------------------------------------------------------------------
+aluno | matricula | codigo | disciplina | professor
+Igor Almeida | A-2026001 | ALG1 | Algoritmos e Estruturas de Dados I | Henrique Barbosa
+Igor Almeida | A-2026001 | IADS | Introducao a ADS | Daniel Ferreira
+Igor Almeida | A-2026001 | LOG1 | Logica Computacional | Ana Beatriz Souza
+Igor Almeida | A-2026001 | MTD1 | Matematica Discreta | Bruno Lima
+Julia Castro | A-2026002 | ALG1 | Algoritmos e Estruturas de Dados I | Henrique Barbosa
+Julia Castro | A-2026002 | IADS | Introducao a ADS | Daniel Ferreira
+Julia Castro | A-2026002 | LOG1 | Logica Computacional | Ana Beatriz Souza
+Julia Castro | A-2026002 | MTD1 | Matematica Discreta | Bruno Lima
+Kevin Oliveira | A-2025010 | ALG2 | Algoritmos e Estruturas de Dados II | Ana Beatriz Souza
+Kevin Oliveira | A-2025010 | ARC1 | Arquitetura de Computadores | Bruno Lima
+Kevin Oliveira | A-2025010 | BD1 | Banco de Dados I | Camila Rocha
+Kevin Oliveira | A-2025010 | POO1 | Programacao Orientada a Objetos | Gabriela Nunes
+Larissa Mendes | A-2024021 | BD2 | Banco de Dados II | Camila Rocha
+Larissa Mendes | A-2024021 | ENG1 | Engenharia de Software | Elaine Martins
+Larissa Mendes | A-2024021 | SO1 | Sistemas Operacionais | Henrique Barbosa
+Larissa Mendes | A-2024021 | WEB1 | Desenvolvimento Web | Daniel Ferreira
+Marcos Vinicius Dias | A-2024022 | GPR1 | Gerencia de Projetos | Elaine Martins
+Marcos Vinicius Dias | A-2024022 | MOB1 | Desenvolvimento Mobile | Daniel Ferreira
+Marcos Vinicius Dias | A-2024022 | RED1 | Redes de Computadores | Fabio Goncalves
+Marcos Vinicius Dias | A-2024022 | SEG1 | Seguranca da Informacao | Fabio Goncalves
+Natalia Pereira | A-2023035 | IA1 | Inteligencia Artificial | Camila Rocha
+Natalia Pereira | A-2023035 | NUV1 | Computacao em Nuvem | Fabio Goncalves
+Natalia Pereira | A-2023035 | TI1 | Trabalho Interdisciplinar | Elaine Martins
+Natalia Pereira | A-2023035 | TOP1 | Topicos Especiais em Tecnologia | Gabriela Nunes
+(24 linha(s))
+
+==============================================================================
+C1) UNIAO - PESSOAS COM VINCULO ATIVO NO SEMESTRE 2026/1
+------------------------------------------------------------------------------
+nome | email | vinculo
+Igor Almeida | igor.almeida@sga.pucminas.br | ALUNO
+Julia Castro | julia.castro@sga.pucminas.br | ALUNO
+Kevin Oliveira | kevin.oliveira@sga.pucminas.br | ALUNO
+Larissa Mendes | larissa.mendes@sga.pucminas.br | ALUNO
+Marcos Vinicius Dias | marcos.dias@sga.pucminas.br | ALUNO
+Natalia Pereira | natalia.pereira@sga.pucminas.br | ALUNO
+Ana Beatriz Souza | ana.souza@pucminas.br | PROFESSOR
+Bruno Lima | bruno.lima@pucminas.br | PROFESSOR
+Camila Rocha | camila.rocha@pucminas.br | PROFESSOR
+Daniel Ferreira | daniel.ferreira@pucminas.br | PROFESSOR
+Elaine Martins | elaine.martins@pucminas.br | PROFESSOR
+Fabio Goncalves | fabio.goncalves@pucminas.br | PROFESSOR
+Gabriela Nunes | gabriela.nunes@pucminas.br | PROFESSOR
+Henrique Barbosa | henrique.barbosa@pucminas.br | PROFESSOR
+(14 linha(s))
+
+==============================================================================
+C2) INTERSECAO - PROFESSORES HABILITADOS EM DISCIPLINAS DO 1o OU 2o
+------------------------------------------------------------------------------
+nome | matricula
+Ana Beatriz Souza | P-1001
+Bruno Lima | P-1002
+Camila Rocha | P-1003
+Daniel Ferreira | P-1004
+Gabriela Nunes | P-1007
+Henrique Barbosa | P-1008
+(6 linha(s))
+
+==============================================================================
+C3) DIFERENCA - PROFESSORES HABILITADOS QUE NAO MINISTRAM A DISCIPLINA
+------------------------------------------------------------------------------
+professor | disciplina
+Ana Beatriz Souza | ALG1
+Bruno Lima | SO1
+Gabriela Nunes | WEB1
+Henrique Barbosa | ALG2
+Henrique Barbosa | IA1
+(5 linha(s))
+
+==============================================================================
+A1) COUNT + GROUP BY + HAVING - PROFESSORES COM MAIS DE UMA DISCIPLINA
+------------------------------------------------------------------------------
+professor | qtde_disciplinas
+Fabio Goncalves | 3
+Elaine Martins | 3
+Daniel Ferreira | 3
+Camila Rocha | 3
+Henrique Barbosa | 2
+Gabriela Nunes | 2
+Bruno Lima | 2
+Ana Beatriz Souza | 2
+(8 linha(s))
+
+==============================================================================
+A2) AVG/MIN/MAX + GROUP BY + HAVING - CARGA HORARIA POR PERIODO
+------------------------------------------------------------------------------
+sigla | periodo | media_ch | menor_ch | maior_ch
+ADS | 1 | 60.0 | 40 | 80
+ADS | 2 | 75.0 | 60 | 80
+ADS | 3 | 70.0 | 60 | 80
+ADS | 4 | 60.0 | 40 | 80
+(4 linha(s))
+
+==============================================================================
+A3) COUNT + GROUP BY - PARALELISMO DA GRADE
+------------------------------------------------------------------------------
+dia | hora_inicio | disciplinas_em_paralelo
+Segunda-feira | 20:55 | 5
+Terca-feira | 19:00 | 5
+Segunda-feira | 19:00 | 4
+Terca-feira | 20:55 | 4
+Quarta-feira | 19:00 | 2
+(5 linha(s))
+
+==============================================================================
+A4) SUM + GROUP BY - CARGA HORARIA TOTAL POR PROFESSOR
+------------------------------------------------------------------------------
+professor | titulacao | carga_total
+Camila Rocha | Doutora | 240
+Daniel Ferreira | Mestre | 200
+Fabio Goncalves | Doutor | 180
+Ana Beatriz Souza | Doutora | 140
+Elaine Martins | Especialista | 140
+Henrique Barbosa | Doutor | 140
+Bruno Lima | Mestre | 120
+Gabriela Nunes | Mestre | 120
+(8 linha(s))
+
+==============================================================================
+L1) LIKE - DISCIPLINAS DA AREA DE DADOS E SEUS PROFESSORES
+------------------------------------------------------------------------------
+codigo | disciplina | periodo | professor
+ALG1 | Algoritmos e Estruturas de Dados I | 1 | Henrique Barbosa
+ALG2 | Algoritmos e Estruturas de Dados II | 2 | Ana Beatriz Souza
+BD1 | Banco de Dados I | 2 | Camila Rocha
+BD2 | Banco de Dados II | 3 | Camila Rocha
+(4 linha(s))
+
+==============================================================================
+L2) BETWEEN - PROFESSORES ADMITIDOS ENTRE 2012 E 2018 E SUAS TURMAS
+------------------------------------------------------------------------------
+professor | data_admissao | codigo | disciplina
+Camila Rocha | 2012-02-01 | BD1 | Banco de Dados I
+Camila Rocha | 2012-02-01 | BD2 | Banco de Dados II
+Camila Rocha | 2012-02-01 | IA1 | Inteligencia Artificial
+Henrique Barbosa | 2014-08-01 | ALG1 | Algoritmos e Estruturas de Dados I
+Henrique Barbosa | 2014-08-01 | SO1 | Sistemas Operacionais
+Ana Beatriz Souza | 2015-02-01 | LOG1 | Logica Computacional
+Ana Beatriz Souza | 2015-02-01 | ALG2 | Algoritmos e Estruturas de Dados II
+Bruno Lima | 2017-08-01 | MTD1 | Matematica Discreta
+Bruno Lima | 2017-08-01 | ARC1 | Arquitetura de Computadores
+Gabriela Nunes | 2018-02-01 | POO1 | Programacao Orientada a Objetos
+Gabriela Nunes | 2018-02-01 | TOP1 | Topicos Especiais em Tecnologia
+(11 linha(s))
+
+==============================================================================
+L3) IN - GRADE DE SEGUNDA E SEXTA-FEIRA
+------------------------------------------------------------------------------
+dia | hora_inicio | disciplina | sala
+Segunda-feira | 19:00 | Introducao a ADS | B3-101
+Segunda-feira | 19:00 | Banco de Dados I | B3-102
+Segunda-feira | 19:00 | Engenharia de Software | B3-201
+Segunda-feira | 19:00 | Computacao em Nuvem | B5-L01
+Segunda-feira | 20:55 | Algoritmos e Estruturas de Dados I | B3-101
+Segunda-feira | 20:55 | Algoritmos e Estruturas de Dados II | B3-102
+Segunda-feira | 20:55 | Banco de Dados II | B3-201
+Segunda-feira | 20:55 | Desenvolvimento Mobile | B5-L01
+Segunda-feira | 20:55 | Trabalho Interdisciplinar | B5-L02
+(9 linha(s))
+
+==============================================================================
+V1) VW_GRADE_HORARIOS
+------------------------------------------------------------------------------
+id_alocacao | curso | periodo | cod_disciplina | disciplina | professor | dia | slot | hora_inicio | hora_fim | sala
+1 | ADS | 1 | ALG1 | Algoritmos e Estruturas de Dados I | Henrique Barbosa | SEG | 2 | 20:55 | 22:35 | B3-101
+2 | ADS | 1 | LOG1 | Logica Computacional | Ana Beatriz Souza | TER | 1 | 19:00 | 20:40 | B3-101
+3 | ADS | 1 | MTD1 | Matematica Discreta | Bruno Lima | TER | 2 | 20:55 | 22:35 | B3-101
+4 | ADS | 1 | IADS | Introducao a ADS | Daniel Ferreira | SEG | 1 | 19:00 | 20:40 | B3-101
+5 | ADS | 2 | ALG2 | Algoritmos e Estruturas de Dados II | Ana Beatriz Souza | SEG | 2 | 20:55 | 22:35 | B3-102
+6 | ADS | 2 | BD1 | Banco de Dados I | Camila Rocha | SEG | 1 | 19:00 | 20:40 | B3-102
+7 | ADS | 2 | POO1 | Programacao Orientada a Objetos | Gabriela Nunes | TER | 1 | 19:00 | 20:40 | B3-102
+8 | ADS | 2 | ARC1 | Arquitetura de Computadores | Bruno Lima | QUA | 1 | 19:00 | 20:40 | B3-101
+9 | ADS | 3 | BD2 | Banco de Dados II | Camila Rocha | SEG | 2 | 20:55 | 22:35 | B3-201
+10 | ADS | 3 | WEB1 | Desenvolvimento Web | Daniel Ferreira | TER | 1 | 19:00 | 20:40 | B3-201
+11 | ADS | 3 | ENG1 | Engenharia de Software | Elaine Martins | SEG | 1 | 19:00 | 20:40 | B3-201
+12 | ADS | 3 | SO1 | Sistemas Operacionais | Henrique Barbosa | TER | 2 | 20:55 | 22:35 | B3-102
+13 | ADS | 4 | MOB1 | Desenvolvimento Mobile | Daniel Ferreira | SEG | 2 | 20:55 | 22:35 | B5-L01
+14 | ADS | 4 | RED1 | Redes de Computadores | Fabio Goncalves | TER | 2 | 20:55 | 22:35 | B3-201
+15 | ADS | 4 | GPR1 | Gerencia de Projetos | Elaine Martins | TER | 1 | 19:00 | 20:40 | B5-L01
+16 | ADS | 4 | SEG1 | Seguranca da Informacao | Fabio Goncalves | QUA | 1 | 19:00 | 20:40 | B3-102
+17 | ADS | 5 | IA1 | Inteligencia Artificial | Camila Rocha | TER | 1 | 19:00 | 20:40 | B5-L02
+18 | ADS | 5 | NUV1 | Computacao em Nuvem | Fabio Goncalves | SEG | 1 | 19:00 | 20:40 | B5-L01
+19 | ADS | 5 | TI1 | Trabalho Interdisciplinar | Elaine Martins | SEG | 2 | 20:55 | 22:35 | B5-L02
+20 | ADS | 5 | TOP1 | Topicos Especiais em Tecnologia | Gabriela Nunes | TER | 2 | 20:55 | 22:35 | B5-L01
+(20 linha(s))
+
+==============================================================================
+V2) VW_CARGA_PROFESSORES
+------------------------------------------------------------------------------
+id_professor | professor | titulacao | qtde_disciplinas | carga_horaria_total | total_alunos
+1 | Ana Beatriz Souza | Doutora | 2 | 200 | 3
+2 | Bruno Lima | Mestre | 2 | 180 | 3
+3 | Camila Rocha | Doutora | 3 | 240 | 3
+4 | Daniel Ferreira | Mestre | 3 | 240 | 4
+5 | Elaine Martins | Especialista | 3 | 140 | 3
+6 | Fabio Goncalves | Doutor | 3 | 180 | 3
+7 | Gabriela Nunes | Mestre | 2 | 120 | 2
+8 | Henrique Barbosa | Doutor | 2 | 220 | 3
+(8 linha(s))

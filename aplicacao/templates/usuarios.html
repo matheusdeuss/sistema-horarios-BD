@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<div class="card">
+  <h2>Cadastrar usuário</h2>
+  <form method="post" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
+    <div class="campo"><label>Nome</label><input name="nome" required style="width:100%"></div>
+    <div class="campo"><label>E-mail</label><input name="email" type="email" required style="width:100%"></div>
+    <div class="campo"><label>Login</label><input name="login" required style="width:100%"></div>
+    <div class="campo"><label>Senha</label><input name="senha" type="password" required style="width:100%"></div>
+    <div class="campo"><label>Tipo</label>
+      <select name="tipo_usuario" style="width:100%">
+        <option value="COORDENADOR">Coordenador</option>
+        <option value="PROFESSOR">Professor</option>
+        <option value="ALUNO">Aluno</option>
+      </select>
+    </div>
+    <div class="campo" style="align-self:end"><button type="submit">Cadastrar</button></div>
+  </form>
+</div>
+<div class="card">
+  <h2>Usuários cadastrados ({{ usuarios|length }})</h2>
+  <table>
+    <tr><th>Nome</th><th>E-mail</th><th>Login</th><th>Tipo</th></tr>
+    {% for u in usuarios %}
+    <tr><td>{{ u.nome }}</td><td>{{ u.email }}</td><td>{{ u.login }}</td>
+        <td><span class="badge">{{ u.tipo_usuario }}</span></td></tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}
